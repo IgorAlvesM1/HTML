@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Lista Completa</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+      <div>
+    <ol>
+        <h1>Ordenadas</h1>
+        <li>DF</li> 
+        <ol>
+    
+    <li>Taguatinga</li><ol>
+       <li>Taguatinga Norte</li>
+       <li>Taguatinga Sul</li>
+       <li>M Norte</li>
+    </ol>
+    
+    <li>Ceilandia</li><ol>
+        
+      <li>Ceilandia Norte</li>
+      <li>Setor O</li>
+      <li>P norte</li>
+      <li>P sul</li>
+    </ol>
+    
+    <li>Plano Piloto</li>
+    </ol>
+    
+    <li>GO</li>
+    <ol>
+      <li>Goiania</li><ol>
+           <li>Setor Bueno</li>
+           <li>Anhanguera</li>
+        </ol>
+    
+        <li>Caldas Novas</li><ol>
+           <li>Bento de Godoi</li>
+           </ol>
+    </ol>
+    <li>SP</li> <ol> 
+        <li>São Paulo</li>
+        <li>São Bernardo do campo</li>     
+    </ol>
+    <br>
+
+</div>
+
+<hr>
+
+<div>
+    <ul>
+    <h1>Não Ordenada</h1>
+        <li>DF</li> 
+    <ul>
+    
+    <li>Taguatinga</li><ul>
+       <li>Taguatinga Norte</li>
+       <li>Taguatinga Sul</li>
+       <li>M Norte</li>
+    </ul>
+    
+    <li>Ceilandia</li><ul>
+        
+      <li>Ceilandia Norte</li>
+      <li>Setor O</li>
+      <li>P norte</li>
+      <li>P sul</li>
+    </ul>
+    
+    <li>Plano Piloto</li>
+    </ul>
+    
+    <li>GO</li><ul>
+      <li>Goiania</li><ul>
+           <li>Setor Bueno</li>
+           <li>Anhanguera</li>
+        </ul>
+    
+        <li>Caldas Novas</li><ul>
+           <li>Bento de Godoi</li>
+           </ul>
+    </ul>
+    <li>SP</li><ul> 
+        <li>São Paulo</li>
+        <li>São Bernardo do campo</li>     
+    </ul>
+</div>
+
+<hr>
+
+<div>
+
+
+    <style>
+        ul.a {
+          list-style-type: circle;
+        }
+        
+        ul.b {
+          list-style-type: square;
+        }
+        
+        ol.c {
+          list-style-type: upper-roman;
+        }
+        
+        ol.d {
+          list-style-type: lower-alpha;
+        }
+        </style><html>
+    
+    <title>Listas em HTML</title>
+    </head>
+     
+    <body><ol>
+        <h1>Lista com Letras</h1>
+        <li>DF</li> 
+    
+    <ul class="b">
+    <li>Taguatinga</li> 
+    
+    <ol  class="d">
+       <li>Taguatinga Norte</li>
+       <li>Taguatinga Sul</li>
+       <li>M Norte</li>
+    </ol>
+    
+    <li>Ceilandia</li>
+       <ol class="d"> 
+      <li>Ceilandia Norte</li>
+      <li>Setor O</li>
+      <li>P norte</li>
+      <li>P sul</li>
+    </ol>
+    
+    <li>Plano Piloto</li>
+    
+    </ul>
+    <li>GO</li>
+    <ul class="b">
+      <li>Goiania</li>
+      <ol class="d">
+           <li>Setor Bueno</li>
+           <li>Anhanguera</li>
+           </ol>
+    
+        <li>Caldas Novas</li>
+           <ol class="d">
+           <li>Bento de Godoi</li>
+        </ol>
+        </ul>
+    <li>SP</li> <ul class="b">
+        <li>São Paulo</li>
+        <li>São Bernardo do campo</li>  
+        </ul>   
+    
+    </ol>
+
+</div>
+<br>
+<hr>
+
+<div>
+    <table border="1">
+        <h1>Tabela Simples</h1>
+        <tr>
+            <th style="width: 300px; height: 30px;  text-align: center; background-color: rgb(127, 255, 212);">Nome</th>
+            <th style="width: 300px; height: 30px;  text-align: center; background-color: rgb(127, 255, 212);">Telefone</th>
+            <th style="width: 300px; height: 30px;  text-align: center; background-color: rgb(127, 255, 212);">Endereço</th>
+        </tr> 
+        <tr>
+            <td>Orion</td>
+            <td>123</td>
+            <td>ABC</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>789</td>
+            <td>FGH</td>
+    
+        </tr>
+        <tr>
+            <td>Joao </td>
+            <td>456</td>
+            <td>DEF</td>
+    
+    
+    
+        </tr>
+    </table>
+
+</div>
+<br>
+<hr>
+<br>
+<div>
+    <table border="1" style="width: 700px;">
+
+        <h1>Tabela Completa</h1>
+        <tr>
+          <th rowspan="2" style="background-color:antiquewhite ;" > Nome </th>
+          <th rowspan="2" style="background-color: antiquewhite;">Telefone</th>
+          <th colspan="5" style="background-color: antiquewhite;">Endereço</th>
+         </tr>
+      
+        <tr>
+          <th style="background-color: antiquewhite;">CEP</th>
+          <th style="background-color: antiquewhite;">Logradouro</th>
+          <th style="background-color: antiquewhite;">Numero</th>
+        </tr>
+        
+        <tr>
+          <td>Orion</td>
+          <td>1233  </td>
+          <td style="text-align: center;">72.000-000</td>
+          <td>End ABC</td>
+          <td style="text-align: right;">123</td>
+        </tr>
+      
+        <tr>
+          <td>Joao</td>
+          <td>456</td>
+          <td style="text-align: center;">72.000-000</td>
+          <td>End ABC</td>
+          <td style="text-align: right;">123</td>
+      
+        </tr>
+        <td>Maria</td>
+          <td>789</td>
+          <td style="text-align: center;">72.000-000</td>
+          <td>End ABC</td>
+          <td style="text-align: right;">123</td>
+        <tr>
+          
+        </tr>
+       </table>
+
+
+</div>
+
+
+</body>
+</html>
+  </body>
+</html>
