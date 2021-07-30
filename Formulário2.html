@@ -1,0 +1,112 @@
+<html>
+    <html>
+
+        <head>
+            <title>Prova</title>
+            <meta charset="utf-8">
+            
+        
+        </head>
+        
+        <body>
+    
+            <br><br><br>
+         
+            <form action="">
+                <label for="pessoa"> Tipo de pessoa: </label><br>
+                  <input type="radio" name="tipoP" id="pessoa" value="juridica"/>
+                  <label for="pessoa">Pessoa Jurídica</label>
+                  <input type="radio"name="tipoP" id="pessoa" value="fisica"/>
+                  <label for="pessoa">Pessoa Fisica</label>
+                  <br>
+
+                  <label for="cpf"> CPF: </label>
+                  <input type="text" class=" cpf-mask" placeholder="Ex.: 000.000.000-00" id="cpf">
+                  <br>
+                  <label for="cnpj" > CNPJ: </label>
+                  <input type="text" class=""  id="cnpj">
+                  <br>
+                  <label for="nome"> Nome: </label>
+                  <input type="text" class="" placeholder="Ex.: Igor Alves Aquino" id="nome">
+                  <br>
+                  <label for="Genero">Sexo: </label>
+                    <input type="radio" name="sexo" id="Genero" value="M" />
+                    <label for="Genero">Masculino </label>
+                    <input type="radio" name="sexo" id="Genero" value="F" />
+                    <label for="Genero">Feminino</label>
+                  <br>
+                  <label for="email"> E-mail:</label>
+                  <input type="text" class="" placeholder="Ex.: fulana123@gmail.com" id="email">
+                  <br>
+                  <label for="tel"> Telefone: </label>
+                  <input type="text" class=" cel-sp-mask" placeholder="Ex.: (00) 00000-0000">
+                  <br>
+                  <label for="cargo">Cargo:</label>
+
+                    <select name="Uf" id="UF">
+
+                        <option value="Estagiario">Estagiário</option>
+                        <option value="gerente">Gerente</option>
+                        <option value="diretor">Diretor</option>
+                        <option value="presidente">Presidente</option>
+                    </select>
+                    <br>
+                  <label for="sal"> Salário: </label>
+                  <input type="text" placeholder="" id="sal" >
+                  <br>
+
+                    <fieldset>
+                      <legend>Endereço</legend>
+                      
+                         <label="cep"> CEP: </label>
+                         <input type="text" class="cep-mask" placeholder="Ex.: 00000-000" id="cep">
+                         <br>
+                         <label for="end"> Endereço: </label>
+                         <input type="text"  id="end">
+                         <br>
+                         <label for="UF">UF:</label>
+
+                            <select name="Uf" id="UF">
+                                <option value="Df">Distrito federal</option></select>
+                                <br>
+                                <label for="Município">Munícipio:</label>
+
+                                    <select name="Município" id="Município">
+
+                                        <option value="brasilia">Brasilia</option>
+                     </select>
+                    </fieldset>
+                      
+                           <fieldset>
+
+                                  <legend>Perfil</legend>
+                                     <input type="checkbox" name="Perfil[]"
+                                    id="Financeiro" value="Financeiro" /><label
+                                      for="financeiro">Financeiro<label>
+                                  <br>
+                                     <input type="checkbox" name="Perfil[]"
+                                    id="faturamento" value="faturamento" /><label
+                                    for="faturamento">Faturamento<label>
+                                        <br>
+                                        <input type="checkbox"
+                                            name="Perfil[]" id="contabilidade"
+                                            value="cont" /><label
+                                            for="cont">Contabilidade<label>
+                                                <br>
+                                        <input type="checkbox" name="Perfil" id="RH" value="recursos" />
+                                        <label for="RH">Recursos Humanos</label>
+
+                              </fieldset>
+                     
+
+
+            </form>
+
+
+
+
+        </body>
+
+    </html>
+
+</html>

@@ -1,0 +1,92 @@
+<html>
+    <head>
+            <title>Formulário</title>
+            <script>
+          nome="Orion";
+          document.getElementById('nome')
+           
+
+            </script>
+    </head>
+
+    <body>
+
+        <h1>Formulário</h1>
+   
+            <form action="">
+        
+                <label for="nome"> Nome:</label> <input type="text" name="" id="nome" />
+                        <br>
+                <label for="Email"> Email:</label> <input type="text" name="" id="Email" />
+                        <br>
+                <label for="tell">Telefone:<label> <input type="number" name="" id="Tell" />
+                        <br>
+                <label for="Endereço">Endereço:<label> <input type="Text" name="" id="Endereço" />
+                        <br>
+                <label for="Data de nascimento">Data de nascimento:<label> 
+                    <input type="date" name="" id="Data de nascimento" />
+                        <br>
+                <label for="gender">Sexo:<label>
+                    <input type="radio" name="sexo" id="gender" value="M" /><label for="gender">Masculino:<label></label>
+                    <input type="radio" name="sexo" id="gender" value="F"/><label for="gender">Feminino:<label></label>
+                        <br>
+                <label for="UF">UF:<label>
+
+                    <select name="Uf" id="UF">
+
+                        <option value="">Selecione</option> 
+                        <option value="Df">Distrito federal</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+
+                    <br>
+
+                </select>
+                <label for="Município">Munícipio:<label>
+                
+                    <select name="Município" id="Município">
+                        
+                        <option value="">Selecione</option> 
+                        <option value="Taguatinga">Taguatinga</option>
+                        <option value="Ceilândia">Ceilândia</option>
+                        <option value="Gama">Gama</option>
+                        <option value="Asa sul">Asa sul</option>
+                        
+                    </select>
+
+                    <br>
+
+                <fieldset>
+
+                    <legend>Perfis</legend>
+                    <input type="checkbox" name="Perfis[]" id="administrador" value="ADM" /><label for="administrador">Administrador<label>
+                        <br>
+                    <input type="checkbox" name="Perfis[]" id="Finaceiro" value="ADM" /><label for="Finaceiro">Financeiro<label>
+                        <br>
+                    <input type="checkbox" name="Perfis[]" id="RH" value="ADM" /><label for="RH">RH:<label>
+
+                </fieldset>
+                        <label for="Observação">Observação:<label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                        <br>
+
+                        <input type="button" value="Enviar" onclick="validarDados()">
+                        
+            </form>
+            <script>
+            function validarDados(){
+
+          
+                nome=document.getElementById('nome');
+
+                if (nome==''){
+                    alert('O nome é obrigatório')
+                }
+            }
+
+                  </script>
+
+    </body>
+</html>
