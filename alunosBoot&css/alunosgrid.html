@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Alunosgrid</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Dever 4</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Aluno <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Professores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Turma</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disciplina</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+      <div class="jumbotron mt-1 ">
+          <h1 class="display-4">Alunos</h1>
+        </div>
+        <form action="">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="card border-danger mb-3" >
+                    <div class="card-header text-white bg-danger">Dados Gerais</div>
+                    <div class="card-body ">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Insira o Nome">
+                          </div>
+                          <div class="form-group">
+                            <label for="data">Dt.nasc</label>
+                            <input type="date" class="form-control" id="data" >
+                          </div>
+                          <div class="form-group">
+                            <label for="mat">Matricula</label>
+                            <input type="text" class="form-control" id="mat" placeholder="Insira a matricula">
+                          </div>
+                         
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Turma</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>ADS - 1º semestre</option>
+                                    <option>ADS - 2º semestre</option>
+                                    <option>ADS - 3º semestre</option>
+                                    <option>ADS - 4º semestre</option>
+                                    <option>ADS - 5º semestre</option>
+                                </select>
+                              </div>
+                          
+                    </div>
+                  </div>
+    
+    
+            </div>
+            <div class="col-lg-5">
+                <div class="card border-danger mb-3" >
+                    <div class="card-header text-white bg-danger">Contato</div>
+                    <div class="card-body ">
+                        <div class="form-group">
+                            <label for="email">Endereço de email</label>
+                            <input type="email" class="form-control" id="email" >
+                          </div>
+                          <div class="form-group">
+                            <label for="cel">Celular</label>
+                            <input type="tel" class="form-control" id="cel" >
+                          </div>
+                          <div class="form-group">
+                            <label for="cep">CEP</label>
+                            <input type="text" class="form-control" id="cep">
+                          </div>
+                          <div class="form-group">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" id="endereco">
+                          </div>
+    
+                    </div>
+        </div>
+        </div>
+          
+    </div>
+
+      </form>
+      <div class="text-center">
+        <div class="btn-group text-center" role="group" >
+            <button type="button" class="btn btn-success">Salvar</button>
+            <button type="button" class="btn btn-danger">Voltar</button>
+    
+    </div>
+      </div> 
+     </div>
+     
+    
+    
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    
+        
+    </body>
+    </html>

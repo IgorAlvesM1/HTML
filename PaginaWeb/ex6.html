@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <html>
+
+        <head>
+            <title>Exercício 6</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+                integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        </head>
+        
+        <body>
+        
+        
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#">Dever 1</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex1.html">Ex. 1<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex2.html">Ex. 2<span class="sr-only"> </span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex3.html">Ex. 3<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex4.html">Ex. 4 <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex5.html">Ex. 5<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex6.html">Ex. 6<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex7.html">Ex. 7<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex8.html">Ex. 8<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex9.html">Ex. 9<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex10.html">Ex. 10<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex11.html">Ex. 11<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex12.html">Ex. 12<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex13.html">Ex. 13<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex14.html">Ex. 14<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex15.html">Ex. 15<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ex16.html">Ex. 16<span class="sr-only"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
+            <div class="container" style="margin-top: 70px;">
+        
+                <h1>Exercício 6</h1>
+                <p>Calculo de salário final</p>
+        
+                <form>
+                    <label for="vendacar" class="col-sm-2 col-form-label"> Nº venda de carros: </label>
+                      <div class="col-sm-10">
+                    <input type="text" id="vendacar" name="vendacar"></br>
+                      </div>
+                      <label for="vtovendas" class="col-sm-2 col-form-label">Valor total das vendas: </label>
+                      <div class="col-sm-10">
+                    <input type="number" id="vtovendas" name="vtovendas"></br>
+                      </div>
+                      <label for="salariof" class="col-sm-2 col-form-label">Salario fixo: </label>
+                      <div class="col-sm-10">
+                    <input type="text" id="salariof" name="salariof"></br>
+                      </div>
+                      <label for="pcomissao" class="col-sm-2 col-form-label">Valor da comissão : </label>
+                      <div class="col-sm-10">
+                    <input type="text" id="pcomissao" name="pcomissao"></br>
+                      </div>
+
+                    </div>
+                 <br>
+                 <div class="text-center">
+                    <button onclick="calcular()" type="button" class="btn btn-primary">Calcular Salario</button>
+                </div>
+                
+                </form>
+                
+                <script>
+                    function calcular(){
+
+         vendacar = parseFloat(document.getElementById('vendacar').value);
+          vtovendas = parseFloat(document.getElementById('vtovendas').value);
+          salariof = parseFloat(document.getElementById('salariof').value);
+          pcomissao = parseFloat(document.getElementById('pcomissao').value);
+
+salariofinal = salariof + pcomissao + (vtovendas*5/100);
+
+alert('Salario final é '+salariofinal)
+
+
+}
+                
+            </script>
+        </body>
+        
+        </html>
+
+</html>
